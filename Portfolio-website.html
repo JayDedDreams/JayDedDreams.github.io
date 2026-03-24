@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Simple Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS style starts here. sidenote, i know i could move the CSS to a separate file, but i figured that would be unnecessary since its being sent in a zipfile. i probably will tweak it and try hosting it on my proxmox server -->
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+    <!-- This is the navigation bar be modified -->
+    <nav>
+        <div class="left">
+            <a href="/">Jahnonia Levy</a>
+        </div>
+
+
+        <div class="right">
+            <a href="https://www.linkedin.com/in/jahnovia-levy-8733382a7/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin</span>
+            </a>
+
+
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                <span>github</span>
+            </a>
+
+            <a href="mailto:jlevy15@student.ccd.edu" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-envelope"></i>
+                <span>email</span>
+            </a>
+        </div>
+
+
+
+    </nav>
+
+    <main>
+        <!-- Home 1 Section -->
+        <section class="home-section">
+            <div class="text">
+                <h1>Hi, I'm <span class="highlight">Jahnovia</span></h1>
+                <p>I am a Computer information systems student aspiring to be a network engineer/ cyber security
+                    analyst.</p>
+                <div class="links">
+                    <a href="#skills"><i class="fa-solid fa-server"></i><span>Skills</span></a>
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+                    <a href="#quotes"><i class="fa-solid fa-quote-right"></i><span>Quotes</span></a>
+                </div>
+
+            </div>
+
+            <div class="profile-picture">
+                <a href="https://github.com" target="_blank">
+                    <img src="headshotAstro.webp" alt="Space guy">
+                </a>
+            </div>
+
+        </section>
+        <!-- Skill 2 Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div>
+                <ul>
+                    <li>Linux system administration (CachyOS, Ubuntu Server)</li>
+                    <li>Virtualization & home lab management (Proxmox, LXC containers)</li>
+                    <li>Networking fundamentals & file sharing (Samba, NFS)</li>
+                    <li>Basic level HTML & CSS web development</li>
+                    <li>SQL & database basics (MySQL)</li>
+                    <li>PC hardware troubleshooting & optimization</li>
+                    <li>Command-line interface (CLI) proficiency</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools">
+            <div class="tools-section">
+                <h2>Tools & Technologies</h2>
+                <dl>
+                    <dt>Proxmox</dt>
+                    <dd>An open source virtualization platform I use to run VMs and containers such as
+                        AutomaticRippingMachine (ARM) in my home lab.</dd>
+
+                    <dt>Linux</dt>
+                    <dd>An open source OS I use to run my own streaming service.</dd>
+
+                    <dt>Samba</dt>
+                    <dd>A file sharing service that lets multiple operating systems share files across a network.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- roadmap 3 Section -->
+        <section id="roadmap">
+            <div class="roadmap-section">
+                <h2>My Learning Roadmap</h2>
+                <ol>
+                    <li>Complete CIS degree at Coastline Community College</li>
+                    <li>Earn CompTIA ITF+ certification</li>
+                    <li>Earn CompTIA A+ certification</li>
+                    <li>Pursue CompTIA Security+ for cybersecurity</li>
+                    <li>Land an entry-level IT or cybersecurity role</li>
+                </ol>
+            </div>
+        </section>
+
+
+        <!-- About 4 Section -->
+        <section id="about">
+            <div class="about-section">
+                <h2>About Me</h2>
+                <p>I am a Computer Information Systems student at Coastline Community College with a passion for
+                    technology and hardware. My goals ebb and flow as I continue to learn more. though I would say my
+                    main focus is to become either a Cybersecurity analyst or a Network Engineer. </p>
+                <p>From helping fix cars at the age of 13 to today helping people with their IT issues, I have always
+                    taken a hands on approach to learning.</p>
+            </div>
+        </section>
+
+        <!-- Quotes 5 Section -->
+        <section id="quotes">
+            <blockquote>
+                <p>"if you are going to do something, do it with all your heart"</p>
+                <cite>-Confucious</cite>
+            </blockquote>
+        </section>
+
+
+        <!-- Contact 6 Section -->
+        <section id="contact">
+            <div class="contact-section">
+                <h2>Contact Me</h2>
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Jahnovia Levy" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="jlevy15@example.com" required>
+
+                    <label>Phone</label>
+                    <input type="tel" placeholder="1-800-Moms-Spaghetti" required>
+
+                    <label>Subject</label>
+                    <select>
+                        <option>General Inquiry</option>
+                        <option>Job Opportunity</option>
+                        <option>Collaboration</option>
+                    </select>
+
+                    <label>Preferred Contact</label>
+                    <input type="radio" name="contact" value="email"> Email
+                    <input type="radio" name="contact" value="phone"> Phone
+
+                    <label>
+                        <input type="checkbox"> I agree to be contacted
+                    </label>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
